@@ -1,5 +1,11 @@
 /**index.wxss**/
 .page-index {
-  font-size: 28rpx;
-  background-color: #fff; 
+  font-size: 32rpx;
+}
+.change {
+  padding: 20rpx 30rpx;
+  background-color: #eee;
+}
+.changeLang-Link {
+  display: inline;
 }

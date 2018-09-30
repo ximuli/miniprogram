@@ -4,7 +4,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    msg: '你好，世界！'
+    msg: '你好，世界！',
+    targetLang: '英语'
   },
   changeMsg: function(e) {
     this.setData({

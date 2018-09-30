@@ -1,0 +1,22 @@
+
+@font-face {
+  font-family: "iconfont";
+  src: url('https://at.alicdn.com/t/font_798948_g3g4gh71ifk.ttf?t=1534645203394') format('truetype');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-delete:before { content: "\e8b6"; }
+
+.icon-right:before { content: "\e728"; }
+
+.icon-down:before { content: "\e614"; }
+
+.icon-close:before { content: "\e659"; }
+

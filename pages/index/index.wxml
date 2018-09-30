@@ -1,4 +1,10 @@
 <!--index.wxml-->
 <view class="container page-index" bindtap="changeMsg">
-  <view class="change"></view>
+  <view class="change">
+    <navigator url="/pages/change/change" class="changeLang-Link">
+      <text>到{{targetLang}}</text>
+      <text class="iconfont icon-down"></text>
+    </navigator>
+  </view>
+
 </view>

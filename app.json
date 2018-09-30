@@ -19,14 +19,14 @@
       {
         "pagePath": "pages/index/index",
         "text": "TRANSLATE",
-        "iconPath": "icons/translate.png",
-        "selectedIconPath": "icons/translate-selected.png"
+        "iconPath": "assets/nav-icons/translate.png",
+        "selectedIconPath": "assets/nav-icons/translate-selected.png"
       },
       {
         "pagePath": "pages/history/history",
         "text": "HISTORY",
-        "iconPath": "icons/history.png",
-        "selectedIconPath": "icons/history-selected.png"
+        "iconPath": "assets/nav-icons/history.png",
+        "selectedIconPath": "assets/nav-icons/history-selected.png"
       }
     ]
   }
