@@ -1,4 +1,4 @@
 <!--index.wxml-->
-<view class="container page-index">
-  hello  index
+<view class="container page-index" bindtap="changeMsg">
+  <view class="change"></view>
 </view>

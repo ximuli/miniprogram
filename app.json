@@ -6,24 +6,27 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#1c1b21",
-    "navigationBarTitleText": "简单翻译",
-    "navigationBarTextStyle":"#fff",
-    "backgroundColor": "#333"
+    "navigationBarBackgroundColor": "#feca2a",
+    "navigationBarTitleText": "用心翻译",
+    "navigationBarTextStyle":"white"
   },
   "tabBar":{
     "borderStyle": "white",
-    "position": "top",
-    "color": "#595959",
-    "selectedColor": "#1c1b21",
+    "position": "bottom",
+    "color": "#CCC",
+    "selectedColor": "#feca2a",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "翻译"
+        "text": "TRANSLATE",
+        "iconPath": "icons/translate.png",
+        "selectedIconPath": "icons/translate-selected.png"
       },
       {
         "pagePath": "pages/history/history",
-        "text": "历史"
+        "text": "HISTORY",
+        "iconPath": "icons/history.png",
+        "selectedIconPath": "icons/history-selected.png"
       }
     ]
   }
