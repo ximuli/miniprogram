@@ -4,14 +4,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-    msg: '你好，世界！',
-    targetLang: '英语'
+    targetLang: "英语",
+    isHidden: true,
+    inputText: ''
   },
-  changeMsg: function(e) {
+  onInput: function(e) {
     this.setData({
-      msg: 'Hello, world!'
+      isHidden: false,
+      inputText: e.detail.value
+    })
+    
+  },
+  emptyInput: function() {
+    this.setData({ 
+      isHidden: true,
+      inputText: '' 
     })
   },
+  onConfirm: function() {},
   /**
    * 生命周期函数--监听页面加载
    */

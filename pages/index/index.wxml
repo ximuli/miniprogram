@@ -1,10 +1,25 @@
 <!--index.wxml-->
-<view class="container page-index" bindtap="changeMsg">
+<view class="container page-index">
   <view class="change">
     <navigator url="/pages/change/change" class="changeLang-Link">
       <text>到{{targetLang}}</text>
       <text class="iconfont icon-down"></text>
     </navigator>
+  </view>
+  
+  <view class="inputArea">
+    <view class="textarea-wrap">
+      <text class="iconfont icon-delete" hidden="{{isHidden}}" bindtap="emptyInput"></text>
+      <textarea placeholder="请输入要翻译的文本" placeholder-style="color: #ccc" value="{{inputText}}"
+        bindinput="onInput" bindconfirm="onConfirm" bindblur="onConfirm"></textarea>
+    </view>
+  </view>
+  
+  <view class="outputArea">
+    <view class="outputTitle">翻译结果</view>
+    <view class="translationResults">
+      你好，世界！
+    </view>
   </view>
 
 </view>
