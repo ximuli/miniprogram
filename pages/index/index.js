@@ -10,10 +10,13 @@ Page({
   },
   onInput: function(e) {
     this.setData({
-      isHidden: false,
       inputText: e.detail.value
     })
-    
+    if (this.data.inputText.length > 0) {
+      this.setData({ isHidden: false })
+    }else {
+      this.setData({ isHidden: true })
+    }
   },
   emptyInput: function() {
     this.setData({ 
