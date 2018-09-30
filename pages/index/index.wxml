@@ -10,7 +10,7 @@
   <view class="inputArea">
     <view class="textarea-wrap">
       <text class="iconfont icon-delete" hidden="{{isHidden}}" bindtap="emptyInput"></text>
-      <textarea placeholder="请输入要翻译的文本" placeholder-style="color: #ccc" value="{{inputText}}"
+      <textarea placeholder="请输入要翻译的文本" placeholder-style="color: #ccc" value="{{query}}"
         bindinput="onInput" bindconfirm="onConfirm" bindblur="onConfirm"></textarea>
     </view>
   </view>
@@ -18,7 +18,7 @@
   <view class="outputArea">
     <view class="outputTitle">翻译结果</view>
     <view class="translationResults">
-      你好，世界！
+      {{result}}
     </view>
   </view>
 

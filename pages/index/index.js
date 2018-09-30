@@ -1,30 +1,34 @@
-Page({
+import { translate } from '../../utils/api.js'
 
+Page({
   /**
    * 页面的初始数据
    */
   data: {
     targetLang: "英语",
     isHidden: true,
-    inputText: ''
+    query: '',
+    result: ''
   },
   onInput: function(e) {
     this.setData({
-      inputText: e.detail.value
+      query: e.detail.value
     })
-    if (this.data.inputText.length > 0) {
+    if (this.data.query.length > 0) {
       this.setData({ isHidden: false })
     }else {
       this.setData({ isHidden: true })
     }
   },
   emptyInput: function() {
-    this.setData({ 
-      isHidden: true,
-      inputText: '' 
+    this.setData({ isHidden: true, query: '' })
+  },
+  onConfirm: function() {
+    if (!this.data.query) return 
+    translate(this.data.query).then(res => {
+      this.setData({ result: res.trans_result[0].dst })
     })
   },
-  onConfirm: function() {},
   /**
    * 生命周期函数--监听页面加载
    */

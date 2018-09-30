@@ -10,4 +10,4 @@
 
 .outputArea { border-top: 2rpx solid #feca2a; }
 .outputArea .outputTitle { font-size: 32rpx; color: #999; padding: 20rpx 30rpx;}
-.outputArea .translationResults { min-height: 20vh; }
+.outputArea .translationResults { min-height: 20vh; padding: 20rpx 30rpx;}
