@@ -18,5 +18,5 @@
 
 .icon-down:before { content: "\e614"; }
 
-.icon-close:before { content: "\e659"; }
+.icon-selected:before { content: "\e659"; }
 
