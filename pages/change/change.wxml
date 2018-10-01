@@ -2,8 +2,8 @@
 <view class="container page-change">
   <view class="title">翻译成</view>
   <view class="listItem" wx:for="{{langList}}" wx:key="index" bindtap="onTapItem" hover-class="listItem-hover"
-  data-langTitle="{{item.langTitle}}" data-lang="{{item.lang}}" data-index="{{item.index}}">
-    <text class="selectLang">{{item.langTitle}}</text>
+  data-chs="{{item.chs}}" data-lang="{{item.lang}}" data-index="{{item.index}}">
+    <text class="selectLang">{{item.chs}}</text>
     <text class="iconfont icon-selected" wx:if="{{index === selectLang.index}}"></text>
   </view>
 </view>

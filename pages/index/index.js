@@ -13,9 +13,7 @@ Page({
     result: ''
   },
   onInput: function(e) {
-    this.setData({
-      query: e.detail.value
-    })
+    this.setData({ query: e.detail.value })
     if (this.data.query.length > 0) {
       this.setData({ isHidden: false })
     }else {
@@ -35,7 +33,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    console.log(options)
   },
 
   /**
@@ -49,7 +47,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    this.setData({ targetLang: app.languageData.selectLang })
+      this.setData({ targetLang: app.languageData.selectLang })
+      this.onConfirm()  //切换语言后自动翻译   
   },
 
   /**

@@ -9,6 +9,7 @@ Page({
     langList: app.languageData.langList
   },
   onTapItem: function(e) {
+    console.log(e)
     let langObj = e.currentTarget.dataset
     this.setData({ selectLang: langObj })
     app.languageData.selectLang = langObj  //将被选语言存储到全局数据里，方便调用

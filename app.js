@@ -10,52 +10,52 @@ App({
     selectLang: {},
     langList: [
       {
-        langTitle: '英语',
+        chs: '英语',
         lang: 'en',
         index: 0
       },
       {
-        langTitle: '中文',
+        chs: '中文',
         lang: 'zh',
         index: 1
       },
       {
-        langTitle: '日语',
+        chs: '日语',
         lang: 'jp',
         index: 2
       },
       {
-        langTitle: '韩语',
+        chs: '韩语',
         lang: 'kor',
         index: 3
       },
       {
-        langTitle: '法语',
+        chs: '法语',
         lang: 'fra',
         index: 4
       },
       {
-        langTitle: '西班牙语',
+        chs: '西班牙语',
         lang: 'spa',
         index: 5
       },
       {
-        langTitle: '阿拉伯语',
+        chs: '阿拉伯语',
         lang: 'ara',
         index: 6
       },
       {
-        langTitle: '俄语',
+        chs: '俄语',
         lang: 'ru',
         index: 7
       },
       {
-        langTitle: '德语',
+        chs: '德语',
         lang: 'de',
         index: 8
       },
       {
-        langTitle: '泰语',
+        chs: '泰语',
         lang: 'th',
         index: 9
       }
