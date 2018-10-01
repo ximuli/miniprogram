@@ -10,10 +10,11 @@ Page({
     langList: app.languageData.langList
   },
   onTapItem: function(e) {
-    console.log(e)
-    // this.setData({
-    //   selectLang: lang
-    // })
+    let langObj = e.currentTarget.dataset
+    this.setData({ selectLang: langObj })
+    wx.switchTab({
+      url: '/pages/index/index'
+    })
   },
   /**
    * 生命周期函数--监听页面加载
