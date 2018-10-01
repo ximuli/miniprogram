@@ -2,7 +2,7 @@
 <view class="container page-index">
   <view class="change">
     <navigator url="/pages/change/change" class="changeLang-Link">
-      <text>到{{targetLang}}</text>
+      <text>到{{targetLang.langtitle}}</text>
       <text class="iconfont icon-down"></text>
     </navigator>
   </view>

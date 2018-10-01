@@ -1,11 +1,13 @@
 import { translate } from '../../utils/api.js'
 
+const app = getApp()
+
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    targetLang: "英语",
+    targetLang: {},
     isHidden: true,
     query: '',
     result: ''
@@ -25,7 +27,7 @@ Page({
   },
   onConfirm: function() {
     if (!this.data.query) return 
-    translate(this.data.query).then(res => {
+    translate(this.data.query, 'auto', this.data.targetLang.lang).then(res => {
       this.setData({ result: res.trans_result[0].dst })
     })
   },
@@ -47,7 +49,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    this.setData({ targetLang: app.languageData.selectLang })
   },
 
   /**
