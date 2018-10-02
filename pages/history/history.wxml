@@ -1,7 +1,8 @@
 <scroll-view class="container page-history">
   <view class="title">翻译结果（最多保留 10 条）</view>
-  <view class="history-item" wx:for="{{history}}" wx:key="index">
+  <view class="history-item" wx:for="{{history}}" wx:key="index" bindtap="onTapItem"
+  data-query="{{item.query}}">
     <view class="history-origin">{{item.query}}</view>
     <view class="history-result">{{item.result}}</view>
   </view>
-</scroll-view> 
+</scroll-view>

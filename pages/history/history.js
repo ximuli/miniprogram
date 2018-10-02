@@ -6,7 +6,11 @@ Page({
   data: {
     history: []
   },
-
+  onTapItem: function(e) {
+    wx.reLaunch({
+      url: `/pages/index/index?query=${e.currentTarget.dataset.query}`
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
