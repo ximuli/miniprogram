@@ -1,34 +1,22 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/history/history",
-    "pages/change/change"
+  "pages": [
+    "pages/index/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "subpackages": [
+    {
+      "root": "packageTranslation",
+      "pages": [
+        "pages/index/index",
+        "pages/history/history",
+        "pages/change/change"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#feca2a",
-    "navigationBarTitleText": "用心翻译",
-    "navigationBarTextStyle":"white"
+    "navigationBarTitleText": "用心用心再用心",
+    "navigationBarTextStyle": "white"
   },
-  "tabBar":{
-    "borderStyle": "white",
-    "position": "bottom",
-    "color": "#CCC",
-    "backgroundColor": "#f1f1f1",
-    "selectedColor": "#feca2a",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "TRANSLATE",
-        "iconPath": "assets/nav-icons/translate.png",
-        "selectedIconPath": "assets/nav-icons/translate-selected.png"
-      },
-      {
-        "pagePath": "pages/history/history",
-        "text": "HISTORY",
-        "iconPath": "assets/nav-icons/history.png",
-        "selectedIconPath": "assets/nav-icons/history-selected.png"
-      }
-    ]
-  }
+  "sitemapLocation": "sitemap.json"
 }

@@ -1,0 +1,6 @@
+<view>
+  <weui-tabbar
+    style="position:fixed;bottom:0;width:100%;left:0;right:0;"
+    list="{{tabList}}" bindchange="tabChange" current="{{current}}">
+  </weui-tabbar>
+</view>

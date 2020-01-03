@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#333333",
+  "navigationBarTitleText": "用心翻译",
+  "usingComponents": {
+    "l-tabbar": "/components/common/l-tabbar/index"
+  }
+}

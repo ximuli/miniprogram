@@ -4,7 +4,7 @@ Page({
   },
   onTapItem: function(e) {
     wx.reLaunch({
-      url: `/pages/index/index?query=${e.currentTarget.dataset.query}`
+      url: `/packageTranslation/pages/index/index?query=${e.currentTarget.dataset.query}`
     })
   },
   /**

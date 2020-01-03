@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container page-index">
+  <view class="change">
+    <navigator url="/packageTranslation/pages/change/change" class="changeLang-Link">
+      <text>到{{targetLang.chs}}</text>
+      <text class="iconfont icon-down"></text>
+    </navigator>
+  </view>
+  
+  <view class="inputArea">
+    <view class="textarea-wrap">
+      <text class="iconfont icon-delete" hidden="{{isHidden}}" bindtap="emptyInput"></text>
+      <textarea placeholder="请输入要翻译的文本" placeholder-style="color: #ccc" value="{{query}}"
+        bindinput="onInput" bindconfirm="onConfirm" bindblur="onConfirm"></textarea>
+    </view>
+  </view>
+  
+  <view class="outputArea">
+    <view class="outputTitle">翻译结果</view>
+    <view class="translationResults">
+      {{result}}
+    </view>
+  </view>
+  <l-tabbar></l-tabbar>
+</view>
