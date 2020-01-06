@@ -12,11 +12,5 @@
       ]
     }
   ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#feca2a",
-    "navigationBarTitleText": "用心用心再用心",
-    "navigationBarTextStyle": "white"
-  },
   "sitemapLocation": "sitemap.json"
 }

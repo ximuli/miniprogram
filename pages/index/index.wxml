@@ -1,4 +1,4 @@
 <view class="wrapper">
-  <view class="section">用心翻译</view>
+  <view class="section" bindtap="goToTranslation">翻译</view>
   <view class="section">一言</view>
 </view>
