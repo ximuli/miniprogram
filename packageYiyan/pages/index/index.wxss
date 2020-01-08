@@ -1,0 +1,19 @@
+.wrapper {
+  height: 100%; position: relative;
+}
+
+.wrapper .main {
+  height: 60%;
+  /* display: flex; align-items: center; justify-content: center; */
+  writing-mode: vertical-rl;
+  position: absolute; right: 50%; top: 50%; transform: translate(50%, -50%);
+  font-size: 42rpx; font-weight: 600; line-height: 1.8;
+}
+
+.wrapper .operations {
+  position: absolute; right: 100rpx; bottom: 150rpx;
+}
+
+.wrapper .operations .iconfont {
+  font-size: 48rpx;
+}

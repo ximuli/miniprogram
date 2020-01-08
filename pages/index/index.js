@@ -20,10 +20,16 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {},
-  goToTranslation() {
-    console.log(666)
-    wx.navigateTo({
-      url: '/packageTranslation/pages/index/index'
-    })
+  goTo(e) {
+    const { target } = e.currentTarget.dataset
+    if (target === 'translation') {
+      wx.navigateTo({
+        url: '/packageTranslation/pages/index/index'
+      })
+    } else if (target === 'yiyan') {
+      wx.navigateTo({
+        url: '/packageYiyan/pages/index/index'
+      })
+    }
   }
 })

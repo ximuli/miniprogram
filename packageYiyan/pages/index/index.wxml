@@ -1,0 +1,10 @@
+<view class="wrapper">
+  <view class="main">
+    {{hitokoto}}
+  </view>
+  <view class="operations">
+    <view class="next" bindtap="onNext">
+      <text class="iconfont icon-next"></text>
+    </view>
+  </view>
+</view>
