@@ -1,3 +1,4 @@
+const jinrishici = require('../../../utils/jinrishici.js')
 const app = getApp()
 
 Page({
@@ -11,11 +12,18 @@ Page({
    */
   onLoad: function (options) {
     this.getYiyan()
+    this.getShici()
   },
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {},
+  getShici() {
+    jinrishici.load(res => {
+      console.log('jinrishici')
+      console.log(res)
+    })
+  },
   getYiyan() {
     const self = this
     wx.request({
