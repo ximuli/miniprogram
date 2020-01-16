@@ -17,9 +17,51 @@
 }
 
 .wrapper .operations {
-  position: absolute; right: 100rpx; bottom: 150rpx;
+  position: absolute; right: 100rpx; bottom: 200rpx;
+}
+
+.wrapper .operations > view {
+  margin-bottom: 10rpx;
 }
 
 .wrapper .operations .iconfont {
   font-size: 48rpx;
+}
+
+.settings-wrapper {
+  position: absolute; top: 135rpx; left: 30rpx; z-index: 100; 
+  width: 600rpx; background-color: #FFF; border-radius: 8rpx;
+  display: none; padding: 36rpx;
+}
+
+.settings-wrapper.active {
+  display: block;
+}
+
+.settings-wrapper::after {
+  position: absolute; content: ''; top: -25rpx; left: 24rpx;
+  width: 0; height: 0;
+  border-style: solid; border-color: #FFF;
+  border-bottom-width: 20rpx; border-left-width: 18rpx; border-right-width: 18rpx;
+  border-left-color: transparent; border-right-color: transparent; border-top-color: transparent;
+}
+
+.setting-mask {
+  position: absolute; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.1); z-index: 99;
+}
+
+.setting-switch {
+  position: absolute; top: 62rpx; left: 50rpx;
+}
+
+.setting-switch .icon-setting {
+  font-size: 44rpx;
+}
+
+.setting-switch.tapping .icon-setting {
+  color: #666;
+}
+
+.setting-item .title {
+  font-weight: bold;
 }

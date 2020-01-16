@@ -2,7 +2,9 @@ const app = getApp()
 
 Page({
   data: {
-    hitokoto: ''
+    hitokoto: '',
+    isShowSettings: false,
+    tapping: false
   },
   /**
    * 生命周期函数--监听页面加载
@@ -57,5 +59,26 @@ Page({
       this.getYiyan()
       clearTimeout(timerId)
     }, 300)
+  },
+  changeSettingSwitch() {
+    if (!this.data.isShowSettings) {
+      this.setData({
+        tapping: true
+      })
+      const timerId = setTimeout(() => {
+        this.setData({
+          tapping: false
+        })
+        clearTimeout(timerId)
+      }, 450)
+    }
+    this.setData({
+      isShowSettings: !this.data.isShowSettings
+    })
+  },
+  closeSetting(e) {
+    this.setData({
+      isShowSettings: false
+    })
   }
 })

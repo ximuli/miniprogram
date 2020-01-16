@@ -1,10 +1,10 @@
 @font-face {font-family: "iconfont";
-  src: url('//at.alicdn.com/t/font_798948_z3ign6ilow.eot?t=1578462049403'); /* IE9 */
-  src: url('//at.alicdn.com/t/font_798948_z3ign6ilow.eot?t=1578462049403#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOIAAsAAAAAB/AAAAM7AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDSAqCaIJEATYCJAMYCw4ABCAFhG0HURvzBiMRZnswRvaPw9gxnYxdx1pdpsuhkiz45r25IxmJ/xwP8HPp+5BcSqi6KUA5R8gKFaPx6DpZYW4WULYsZ3e+35zFoZwwUZMlOYsefeFfy+nLZfTza/OsYVbNqmiFZtLwx8+4ziqWJ1qpkxLOQltjxP1xr2qmbbD57Ftc5h6UC4XDAQroGh1jC7cg5Qpqh7GbKA/ibAKaTbdAWH3ZvFslA4sCwuX23AlVyi/LWqoSlCU7s/BWoYrPYp3jDf/5MCELFVGRgJXbz645bflw71g93W3MHKYogvGs0PaRsACZcLPUfkMK4wskzc5fyDaiVSXKw73DB37njA6O1RsNUmLgDlrhvzySLAoKQkksbgWb5UTBcC/WSo7igIiQGZmDEBkdRAiM1dsUoBxxRg278BogLKAM8MvTQJnK1tbOvCY6zN9vldXa/vZ1poLqdvZ2p0Gwu/uYq3OoloNqAdCwmk1Dd0jTaYbJcFyOZXtImg24yavRdH7/eFRl0tvj7kmTO8zVpqlYdK3GNFcSkVzb1WDqa7FILPQxXcyVF/sX1QE1Evm+CjaNLx5Hz5iH+DqfL5dQ2O12ujAt6ThRKQ11kjmUS8RxhSBlvid5nhQl9zJXFMsVtPYKha8PKzgbsE/wvgUlYN0EbpGWxiEaP6mWljtId+NuB+lzWZJJ79L8f/c7fn39/1eQBP9VLRn8XPQy5/7GT9Y/UYm0FvwpQcu+7IqAocx2bzxTQGmOxM1qNcMh/o+729+xlH2tiwkqfTFENdMgqcxAZ/wCKLRYCKXKMmg237r9LXpckYTchHkeCRB0+gRRuyFIOn1BZ/wfKPSbglJnSNDsnVfYHXFrH9rNUZArKir+1JY8GWTSTVB6Q/0eckmKOO0FsW2I0ijJpq6YIGOssZ86UzVkhEe6COfDMDDNwh1KjRrV+RDHpuyVopJHZ+NIQE5BhRT+SKvEJoaOVpvc999A7W2Qk5qeDvsLCKudnKQiSQv0VT616rmW+1gftYxSBjEEG5GLYIUBxhmZy6d1oKQiTY/o7CCWBpm28mh+5fiUx3CcDfAMixBDCjkUoQw1i9MYoAilrRsNKv5OK5uTlpeQG0z4qeMAAA==') format('woff2'),
-  url('//at.alicdn.com/t/font_798948_z3ign6ilow.woff?t=1578462049403') format('woff'),
-  url('//at.alicdn.com/t/font_798948_z3ign6ilow.ttf?t=1578462049403') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-  url('//at.alicdn.com/t/font_798948_z3ign6ilow.svg?t=1578462049403#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('//at.alicdn.com/t/font_798948_bicze9gcsc.eot?t=1579165797140'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_798948_bicze9gcsc.eot?t=1579165797140#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQIAAsAAAAACMAAAAO5AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDXgqEFINaATYCJAMcCxAABCAFhG0HWxutB1GUD0qd7GeB3fQB20ZYWWuGjUPRLN3pUwj/b/1H+IqH//Zr983Ml11MGiTRuB093TSTaIRCsgSxUTpZPOT9ebvsZf/G8iDSn8l2gdBKOLV7XcTqKsP3XfMGaCdMhBrJKUKFvq/97XH2chk5szRHT/+fw6a3B8j8drdd1l7tTWEvDiigsRclWiBxpg1jNxGHcTWBrlkWBHa251vUVYCdAnGdBBN1Yx6lhBlae51zZBHPKm16THwAT+7Pxy/YhQhJlYE9d682Lpp/KMxHdf06lxRB218I0nFkrAGFuMuN3Mp+ZQ3SNf5mcSgyrJXUHwq0JL4xaWf+///Ex4KlYRiuQxEqWQ8hAv/vuO6D4JSr1nwocEIKH1pCgo9EIRWfJkIyXztCEt98tXlVNGAYHdzjDQClJ5YEvHtektAQQvXg4Gjlf7icpogDJ0qM2HKhCHJJgwBy2NKTovcdSXF61/1rqVVtWiDj9JQ4P6cuLuizs0K2t36hQyGH6emYq1PEOV11853KLO7uXKxXolmGxjnpmK3MoQhcWtmEeXZGxs/Py9ruTZ6epvVM9SmSRFdf97Qy3cvu6fB0c0j5ZKakZPrgQ+XCRpQ8xJk+0WafTOqwULmRnUoJkVlcw8AH/GjaF/yAqojRl1Wx6nAtw1opyTYlUG6VloQDS5VBqU1KUkoihSpFtabgh2Q+YEZGPrsL1MY0TFXNgDPn5N27Dx8Cg5ycHBxBB5lvcWNO7havpCpiCPuIxxtNoMtLxBoneBVr4Puc6rSyQW29TfCxGI7hhS6sgKEGAP3n6BXyByB7cZ7F2cLIZ3AdhwAg7+bVztAiMv8jfsf/7e3fdGmPr604F+A1KBS7mf5zGwr0V20lamvfv7bmnGLqgbcp+uR4S4FGD+KeuXThIt56Ytx9f7ap2t0JrakQksYMZK05ZMGuQWVAD2qtdehaFXz8gAkFGqJ0sKKZgTBqFZJhL5CNeo0s2DuoTHsLtdFA0HUcgzMOWAhefyUwCkdZP+JZLj3ya9/reUF45UaiepfzgFRJnmyH42R9hxLSxz6F7zAtUk+McEFBzPWQ50x5wimsDnNVnzPrkc/7pGE2F1HfNgGGAodk+SE8Fit5urzqp77/AoKXnCElExqKDyAqyeqJLSs2NZA7S1lrwrk8p9BbMFVEeYQhWIEEMSHIYYWRvPzNUmCpodwWpacZa24hpq5lOL6tuM4roAu8axMpcpSooo4mWs0NVJMytB1yKFqShFibjj9lt0qZ7HG0N0t8NYoAAAAA') format('woff2'),
+  url('//at.alicdn.com/t/font_798948_bicze9gcsc.woff?t=1579165797140') format('woff'),
+  url('//at.alicdn.com/t/font_798948_bicze9gcsc.ttf?t=1579165797140') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_798948_bicze9gcsc.svg?t=1579165797140#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -13,6 +13,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-setting:before {
+  content: "\e61e";
 }
 
 .icon-delete:before {
