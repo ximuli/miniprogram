@@ -4,14 +4,19 @@
     <text class="iconfont icon-setting"></text>
   </view>
   <view class="main">
-    {{hitokoto}}
+    <!-- {{hitokoto}} -->
+    <view class="content">{{ poem.content }}</view>
+    <view class="source">
+      <text class="title">「 {{poem.title}} 」</text>
+      <text class="author">{{poem.author}}</text>
+    </view>
   </view>
   <view class="operations">
     <view class="next" bindtap="onNext">
       <text class="iconfont icon-next"></text>
     </view>
   </view>
-  <view class="settings-wrapper {{isShowSettings ? 'active' : ''}}">
+  <view class="settings-wrapper {{isShowSetting ? 'active' : ''}}">
     <view class="setting-item">
       <view class="title">文字方向</view>
       <radio-group>
@@ -20,5 +25,5 @@
     </view>
   </view>
   <!-- 遮罩层 -->
-  <view class="setting-mask" wx:if="{{isShowSettings}}" bindtap="closeSetting"></view>
+  <view class="setting-mask" wx:if="{{isShowSetting}}" bindtap="closeSetting"></view>
 </view>

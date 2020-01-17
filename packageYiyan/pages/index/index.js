@@ -3,73 +3,69 @@ const app = getApp()
 
 Page({
   data: {
+    // 一言
     hitokoto: '',
-    isShowSettings: false,
+    // 诗词
+    poem: {},
+    isShowSetting: false,
     tapping: false
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getYiyan()
-    this.getShici()
+    // this.getYiyan()
+    this.getPoem()
   },
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {},
-  getShici() {
+  getPoem() {
     jinrishici.load(res => {
-      console.log('jinrishici')
-      console.log(res)
+      if (res.status === 'success') {
+        this.setData({
+          poem: {
+            title: res.data.origin.title,
+            author: res.data.origin.author,
+            content: res.data.content
+          }
+        })
+      } else {
+        this.setData({
+          poem: {
+            title: '南陵别儿童入京',
+            author: '李白',
+            content: '仰天大笑出门去，我辈岂是蓬蒿人。'
+          }
+        })
+      }
     })
   },
   getYiyan() {
     const self = this
     wx.request({
-      url: 'https://v1.hitokoto.cn///',
+      url: 'https://v1.hitokoto.cn',
       success(res) {
         const { hitokoto } = res.data
         if (hitokoto) {
-          self.setData({
-            hitokoto
-          })
+          self.setData({ hitokoto })
         } else {
           self.setData({
             hitokoto: '在季节的车上，如果你要提前下车，请别推醒装睡的我，这样我可以沉睡到终点，假装不知道你已经离开。'
           })
         }
-      },
-      fail(err) {
-        self.setData({
-          hitokoto: '在季节的车上，如果你要提前下车，请别推醒装睡的我，这样我可以沉睡到终点，假装不知道你已经离开。'
-        })
       }
     })
   },
+  // 下一句
   onNext(e) {
-    // 动画
-    this.animate('.wrapper', [
-      { opacity: 1, translateX: '0' },
-      { opacity: 0, translateX: '-10%' },
-      { opacity: 0, translateX: '10%' },
-      { opacity: 1, translateX: '0' },
-    ], 600, function () {
-        this.clearAnimation('.wrapper', { opacity: true, translateX: true }, function () {
-          console.log("清除了 .wrapper 上的 opacity 和 translateX 属性")
-      })
-    }.bind(this))
-
-    this.asyncUpdateYiyan()
+    // this.getYiyan()
+    this.getPoem()
   },
-  asyncUpdateYiyan() {
-    const timerId = setTimeout(() => {
-      this.getYiyan()
-      clearTimeout(timerId)
-    }, 300)
-  },
+  // 设置浮窗的开关
   changeSettingSwitch() {
-    if (!this.data.isShowSettings) {
+    if (!this.data.isShowSetting) {
       this.setData({
         tapping: true
       })
@@ -81,12 +77,12 @@ Page({
       }, 450)
     }
     this.setData({
-      isShowSettings: !this.data.isShowSettings
+      isShowSetting: !this.data.isShowSetting
     })
   },
-  closeSetting(e) {
+  closeSetting() {
     this.setData({
-      isShowSettings: false
+      isShowSetting: false
     })
   }
 })
