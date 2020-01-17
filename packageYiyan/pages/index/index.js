@@ -6,7 +6,9 @@ Page({
     // 一言
     hitokoto: '',
     // 诗词
-    poem: {},
+    poemTitle: '',
+    poemAuthor: '',
+    poemContent: '',
     isShowSetting: false,
     tapping: false
   },
@@ -25,12 +27,10 @@ Page({
     jinrishici.load(res => {
       if (res.status === 'success') {
         this.setData({
-          poem: {
-            title: res.data.origin.title,
-            author: res.data.origin.author,
-            content: res.data.content
-          }
-        })
+          poemTitle: res.data.origin.title,
+          poemAuthor: res.data.origin.author,
+          poemContent: res.data.content
+         })
       } else {
         this.setData({
           poem: {

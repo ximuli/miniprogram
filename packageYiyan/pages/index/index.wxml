@@ -5,10 +5,10 @@
   </view>
   <view class="main">
     <!-- {{hitokoto}} -->
-    <view class="content">{{ poem.content }}</view>
+    <view class="content">{{ poemContent }}</view>
     <view class="source">
-      <text class="title">「 {{poem.title}} 」</text>
-      <text class="author">{{poem.author}}</text>
+      <text class="title">「 {{poemTitle}} 」</text>
+      <text class="author">{{poemAuthor}}</text>
     </view>
   </view>
   <view class="operations">
