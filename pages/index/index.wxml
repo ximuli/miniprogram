@@ -1,4 +1,0 @@
-<view class="wrapper">
-  <view class="section" bindtap="goTo" data-target="translation">翻译</view>
-  <view class="section" bindtap="goTo" data-target="yiyan">一言</view>
-</view>
