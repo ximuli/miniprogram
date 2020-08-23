@@ -1,12 +1,11 @@
 const path = require('path');
 const DefinePlugin = require('@wepy/plugin-define');
-const eslint = require('@wepy/plugin-eslint');
 
 var prod = process.env.NODE_ENV === 'production';
 
 module.exports = {
   wpyExt: '.wpy',
-  eslint: true,
+  eslint: false,
   cliLogs: !prod,
   static: ['static'],
   build: {
@@ -37,9 +36,6 @@ module.exports = {
     DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     })
-  ],
-  appConfig: {
-    noPromiseAPI: ['createSelectorQuery']
-  }
+  ]
 }
 
