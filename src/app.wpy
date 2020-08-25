@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+  background: url($baseImgUrl + 'xxx.jpg') no-repeat;
 }
 </style>
 
@@ -16,7 +17,6 @@ import wepyRedux from '@wepy/redux';
 import config from '@/config'
 
 console.log('config', config)
-
 
 wepy.use(wepyRedux);
 

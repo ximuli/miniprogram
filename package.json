@@ -4,8 +4,8 @@
   "description": "wepy2 project",
   "main": "weapp/app.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=test ./node_modules/.bin/wepy build --watch",
-    "build": "cross-env NODE_ENV=production ./node_modules/.bin/wepy build --no-cache",
+    "dev": "cross-env NODE_ENV=test ./node_modules/.bin/wepy build --log trace --watch",
+    "build": "cross-env NODE_ENV=prod ./node_modules/.bin/wepy build --no-cache",
     "clean": "rm -rf weapp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

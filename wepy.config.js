@@ -1,6 +1,6 @@
 const path = require('path');
 const DefinePlugin = require('@wepy/plugin-define');
-
+const styleVariables = require('./src/assets/style/variable');
 var prod = process.env.NODE_ENV === 'production';
 
 module.exports = {
@@ -20,7 +20,9 @@ module.exports = {
   },
   compilers: {
     sass: {
-      outputStyle: 'compressed'
+      outputStyle: 'compressed',
+      data: Object.keys(styleVariables)
+        .map(k => `$${k.replace('_', '-')}: '${styleVariables[k]}';`).join('\n')
     },
     babel: {
       sourceMap: true,
