@@ -1,0 +1,36 @@
+{
+  "name": "miniprogram",
+  "version": "0.0.2",
+  "description": "wepy2 project",
+  "main": "weapp/app.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=test ./node_modules/.bin/wepy build --log trace --watch",
+    "build": "cross-env NODE_ENV=prod ./node_modules/.bin/wepy build --no-cache",
+    "clean": "rm -rf weapp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "wepy": {
+    "module-a": false,
+    "./src/components/list": "./src/components/wepy-list.wpy"
+  },
+  "author": "ximuli <ximuli666@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@wepy/core": "^2.1.0",
+    "@wepy/redux": "^2.1.0",
+    "miniprogram-slide-view": "0.0.3",
+    "redux": "^4.0.5",
+    "redux-actions": "^2.6.5",
+    "redux-promise": "^0.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@wepy/babel-plugin-import-regenerator": "2.1.0",
+    "@wepy/cli": "^2.1.0",
+    "@wepy/compiler-babel": "^2.1.0",
+    "@wepy/compiler-sass": "^2.1.0",
+    "@wepy/plugin-define": "^2.1.0",
+    "cross-env": "^7.0.2"
+  }
+}
