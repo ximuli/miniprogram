@@ -1,6 +1,0 @@
-{
-    "component": true,
-    "usingComponents": {
-      "weui-tabbar": "/components/weui/tabbar/tabbar"
-    }
-}

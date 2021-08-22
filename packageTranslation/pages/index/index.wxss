@@ -1,6 +1,4 @@
 /**index.wxss**/
-.page-index { }
-
 .change { padding: 20rpx 30rpx; background-color: #fff; }
 .changeLang-Link { display: inline; color: #999; font-size: 32rpx;}
 
@@ -11,3 +9,10 @@
 .outputArea { border-top: 2rpx solid #feca2a; }
 .outputArea .outputTitle { font-size: 32rpx; color: #999; padding: 20rpx 30rpx;}
 .outputArea .translationResults { min-height: 20vh; padding: 20rpx 30rpx;}
+
+/* 历史记录入口 */
+.translation-history .icon-history {
+  position: fixed; right: 50rpx; bottom: 100rpx;
+  border: 2rpx solid #ddd; border-radius: 50%;
+  color: #666; font-size: 44rpx; font-weight: bold; padding: 16rpx; line-height: 44rpx;
+}

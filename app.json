@@ -18,5 +18,8 @@
       ]
     }
   ],
+  "useExtendedLib": {
+    "weui": true
+  },
   "sitemapLocation": "sitemap.json"
 }

@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container page-index">
+<view class="container">
   <view class="change">
     <navigator url="/packageTranslation/pages/change/change" class="changeLang-Link">
       <text>到{{targetLang.chs}}</text>
@@ -21,5 +21,8 @@
       {{result}}
     </view>
   </view>
-  <l-tabbar></l-tabbar>
+
+  <view class="translation-history" bindtap="onTapToHistory">
+    <text class="iconfont icon-history"></text>
+  </view>
 </view>

@@ -8,19 +8,19 @@ Page({
     query: '',
     result: ''
   },
-  onInput: function(e) {
+  onInput: function (e) {
     this.setData({ query: e.detail.value })
     if (this.data.query.length > 0) {
       this.setData({ isHidden: false })
-    }else {
+    } else {
       this.setData({ isHidden: true })
     }
   },
-  emptyInput: function() {
+  emptyInput: function () {
     this.setData({ isHidden: true, query: '' })
   },
-  onConfirm: function() {
-    if (!this.data.query) return 
+  onConfirm: function () {
+    if (!this.data.query) return
     translate(this.data.query, 'auto', this.data.targetLang.lang).then(res => {
       this.setData({ result: res.trans_result[0].dst })
 
@@ -34,7 +34,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    if(options.query) {
+    if (options.query) {
       this.setData({ query: options.query })
     }
   },
@@ -45,6 +45,11 @@ Page({
     if (this.data.targetLang.lang !== app.languageData.selectLang.lang) {
       this.setData({ targetLang: app.languageData.selectLang })
       this.onConfirm()  //切换语言后自动翻译  
-    } 
+    }
+  },
+  onTapToHistory() {
+    wx.navigateTo({
+      url: '/packageTranslation/pages/history/history',
+    })
   }
 })
