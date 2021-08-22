@@ -63,26 +63,7 @@ Page({
     // this.getYiyan()
     this.getPoem()
   },
-  // 设置浮窗的开关
-  changeSettingSwitch() {
-    if (!this.data.isShowSetting) {
-      this.setData({
-        tapping: true
-      })
-      const timerId = setTimeout(() => {
-        this.setData({
-          tapping: false
-        })
-        clearTimeout(timerId)
-      }, 450)
-    }
-    this.setData({
-      isShowSetting: !this.data.isShowSetting
-    })
-  },
-  closeSetting() {
-    this.setData({
-      isShowSetting: false
-    })
+  goBack() {
+    wx.navigateBack()
   }
 })

@@ -53,18 +53,11 @@
   position: absolute; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.1); z-index: 99;
 }
 
-.setting-switch {
+.head-left {
   position: absolute; top: 62rpx; left: 50rpx;
 }
 
-.setting-switch .icon-setting {
+.head-left .iconfont.icon-right.icon-back {
   font-size: 44rpx;
-}
-
-.setting-switch.tapping .icon-setting {
-  color: #666;
-}
-
-.setting-item .title {
-  font-weight: bold;
+  transform: rotate(180deg);
 }
