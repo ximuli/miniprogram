@@ -54,7 +54,7 @@
 }
 
 .head-left {
-  position: absolute; top: 62rpx; left: 50rpx;
+  position: absolute; top: 90rpx; left: 50rpx;
 }
 
 .head-left .iconfont.icon-right.icon-back {
