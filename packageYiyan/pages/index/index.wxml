@@ -6,7 +6,10 @@
   </view>
   <view class="main">
     <!-- {{hitokoto}} -->
-    <view class="content">{{ poemContent }}</view>
+    <view class="content">
+      <!-- fixed 以前没加 text 标签时，这一句竖排文字在手机上无法更新 -->
+      <text>{{poemContent}}</text>
+    </view>
     <view class="source">
       <text class="title">「 {{poemTitle}} 」</text>
       <text class="author">{{poemAuthor}}</text>
