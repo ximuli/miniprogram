@@ -3,7 +3,7 @@ Page({
     history: []
   },
   onTapItem: function(e) {
-    wx.reLaunch({
+    wx.redirectTo({
       url: `/packageTranslation/pages/index/index?query=${e.currentTarget.dataset.query}`
     })
   },

@@ -6,7 +6,7 @@
 .textarea-wrap .icon-delete { position: absolute; right: 0; top: 0; padding: 20rpx 30rpx 20rpx 20rpx; }
 .textarea-wrap textarea { height: 42vh; line-height: 1.5; padding: 20rpx 30rpx;}
 
-.outputArea { border-top: 2rpx solid #feca2a; }
+.outputArea { border-top: 2rpx solid #666; }
 .outputArea .outputTitle { font-size: 32rpx; color: #999; padding: 20rpx 30rpx;}
 .outputArea .translationResults { min-height: 20vh; padding: 20rpx 30rpx;}
 

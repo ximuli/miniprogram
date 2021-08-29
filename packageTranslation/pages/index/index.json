@@ -1,4 +1,5 @@
 {
   "navigationBarBackgroundColor": "#333333",
-  "navigationBarTitleText": "用心翻译"
+  "navigationBarTitleText": "用心翻译",
+  "disableScroll": true
 }
