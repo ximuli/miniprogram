@@ -11,7 +11,7 @@
     <view class="textarea-wrap">
       <text class="iconfont icon-delete" hidden="{{isHidden}}" bindtap="emptyInput"></text>
       <textarea placeholder="请输入要翻译的文本" placeholder-style="color: #ccc" value="{{query}}"
-        bindinput="onInput" bindconfirm="onConfirm" bindblur="onConfirm"></textarea>
+        bindinput="onInput" bindblur="onConfirm"></textarea>
     </view>
   </view>
   
