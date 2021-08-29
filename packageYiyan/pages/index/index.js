@@ -31,14 +31,6 @@ Page({
           poemAuthor: res.data.origin.author,
           poemContent: res.data.content
          })
-      } else {
-        this.setData({
-          poem: {
-            title: '南陵别儿童入京',
-            author: '李白',
-            content: '仰天大笑出门去，我辈岂是蓬蒿人。'
-          }
-        })
       }
     })
   },
