@@ -1,4 +1,12 @@
 <view class="wrapper">
-  <view class="section" bindtap="goTo" data-target="translation">翻译</view>
-  <view class="section" bindtap="goTo" data-target="yiyan">一言</view>
+  <view class="nav-item" wx:for="{{ navList }}" wx:key="index" data-title="{{ item.title }}" bindtap="tapToDetail">
+    <view class="nav-item-left">
+      <view class="title">{{ item.title }}</view>
+      <view class="desc">{{ item.desc }}</view>
+      <view class="btn">{{ item.btnText }}</view>
+    </view>
+    <view class="nav-item-right">
+      <image class="nav-item-right-icon" src="{{ item.iconSource }}" alt=""></image>
+    </view>
+  </view>
 </view>
