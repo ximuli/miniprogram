@@ -1,4 +1,3 @@
-<!--index.wxml-->
 <view class="container">
   <view class="change">
     <navigator url="/packageTranslation/pages/change/change" class="changeLang-Link">
@@ -18,7 +17,7 @@
   <view class="outputArea">
     <view class="outputTitle">翻译结果</view>
     <view class="translationResults">
-      {{result}}
+      <text user-select>{{result}}</text>
     </view>
   </view>
 

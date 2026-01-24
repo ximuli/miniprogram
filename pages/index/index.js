@@ -1,10 +1,6 @@
-// import { translate } from '../../utils/api.js'
-// const app = getApp()
-
 Page({
   data: {
-    navList: [
-      {
+    navList: [{
         title: '在线翻译',
         desc: '一键翻译，快捷又方便',
         btnText: '去试试',
@@ -34,17 +30,15 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    // if(options.query) {
-    //   this.setData({ query: options.query })
-    // }
-  },
+  onLoad: function (options) {},
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () { },
+  onShow: function () {},
   tapToDetail(e) {
-    const { title } = e.currentTarget.dataset
+    const {
+      title
+    } = e.currentTarget.dataset
     const URL = this.data.navList.find((item => item.title === title))['route']
     if (URL === '') {
       wx.showToast({
