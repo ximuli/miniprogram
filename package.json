@@ -1,0 +1,27 @@
+{
+  "name": "miniprogram",
+  "version": "1.0.0",
+  "description": "乐亦栗的微信小程序",
+  "private": true,
+  "scripts": {
+    "upload": "node scripts/upload.js",
+    "preview": "node scripts/preview.js",
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint . --ext .ts,.js --fix",
+    "format": "prettier --write \"**/*.{ts,js,json,scss}\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "js-md5": "^0.8.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "miniprogram-api-typings": "^4.0.0",
+    "sass": "^1.77.0",
+    "miniprogram-ci": "^1.9.0",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "prettier": "^3.3.0"
+  }
+}

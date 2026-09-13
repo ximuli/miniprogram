@@ -1,1 +1,16 @@
 .DS_Store
+node_modules/
+miniprogram_npm/
+dist/
+.private.key
+project.private.config.json
+*.log
+
+# TypeScript 编译产物（由 DevTools 从 .ts 自动生成）
+app.js
+utils/*.js
+!utils/md5.min.js
+pages/**/*.js
+packageTranslation/**/*.js
+packageYiyan/**/*.js
+components/**/*.js

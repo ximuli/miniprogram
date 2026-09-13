@@ -1,12 +1,11 @@
 <view class="wrapper">
-  <view class="nav-item" wx:for="{{ navList }}" wx:key="index" data-title="{{ item.title }}" bindtap="tapToDetail">
-    <view class="nav-item-left">
-      <view class="title">{{ item.title }}</view>
-      <view class="desc">{{ item.desc }}</view>
-      <view class="btn">{{ item.btnText }}</view>
-    </view>
-    <view class="nav-item-right">
-      <image class="nav-item-right-icon" src="{{ item.iconSource }}" alt=""></image>
-    </view>
-  </view>
+  <nav-card
+    wx:for="{{ navList }}"
+    wx:key="title"
+    title="{{ item.title }}"
+    desc="{{ item.desc }}"
+    btn-text="{{ item.btnText }}"
+    icon-source="{{ item.iconSource }}"
+    route="{{ item.route }}"
+  />
 </view>

@@ -1,0 +1,10 @@
+<view class="nav-item" data-title="{{ title }}" bindtap="onTap">
+  <view class="nav-item-left">
+    <view class="title">{{ title }}</view>
+    <view class="desc">{{ desc }}</view>
+    <view class="btn">{{ btnText }}</view>
+  </view>
+  <view class="nav-item-right">
+    <image class="nav-item-right-icon" src="{{ iconSource }}" alt=""></image>
+  </view>
+</view>

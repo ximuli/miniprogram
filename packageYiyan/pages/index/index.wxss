@@ -32,7 +32,7 @@
 }
 
 .settings-wrapper {
-  position: absolute; top: 135rpx; left: 30rpx; z-index: 100; 
+  position: absolute; top: 135rpx; left: 30rpx; z-index: 100;
   width: 600rpx; background-color: #FFF; border-radius: 8rpx;
   display: none; padding: 36rpx;
 }

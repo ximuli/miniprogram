@@ -1,5 +1,8 @@
 {
   "navigationBarBackgroundColor": "#ffffff",
   "navigationBarTextStyle": "black",
-  "navigationBarTitleText": "首页"
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "nav-card": "/components/nav-card/nav-card"
+  }
 }
